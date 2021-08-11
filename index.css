@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
 }
 
-body{
+html {
+    font-size: 62.5%;
+}
+
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,58 +19,56 @@ body{
     width: 100%;
 }
 
-.login-area{
-    width: 500px;
-    padding: 50px 30px;
-    border-radius: 10px;
+.login-area {
+    width: 50rem;
+    padding: 5rem 3rem;
+    border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.89);
-    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 0.5 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
     margin-left: 50%;
     transform: translateX(-50%)
-    
 }
-.login-container > h1{
-    margin-bottom: 30px;
-    font-size: 40px;
+
+.login-container>h1 {
+    margin-bottom: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
 }
 
-.login-area h1{
+.login-area h1 {
     text-align: center;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgb(255, 255, 255);
-
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid rgb(255, 255, 255);
 }
 
-.takeInput{
+.takeInput {
     width: 100%;
-    padding: 10px;
-    border-radius: 6px;
+    padding: 1rem;
+    border-radius: 6rem;
     border: none;
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 2rem;
+    margin-top: 2rem;
 }
 
-.takeInput::placeholder{
+.takeInput::placeholder {
     color: rgb(177, 174, 174);
 }
 
-.takeInput:focus{
+.takeInput:focus {
     border: none;
     outline: 0;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
 }
 
-.button{
-    margin-top: 30px;
-    
-    padding: 12px 40px;
+.button {
+    margin-top: 3rem;
+    padding: 1.2rem 4rem;
     border: none;
-    border-radius: 6px;
-    font-size: 18px;
+    border-radius: 0.6rem;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-left: 100%;
     transform: translateX(-100%);
@@ -77,18 +77,36 @@ body{
     cursor: pointer;
 }
 
-.button:hover{
-    padding: 17px 47px;
+.button:hover {
+    padding: 1.7rem 4.7rem;
 }
 
-.all-item{
+.all-item {
     display: block;
     align-items: center;
     justify-content: center;
 }
 
-.profile{
+.profile {
     margin-left: 50%;
     transform: translateX(-50%);
     margin-bottom: 0;
+}
+
+@media(max-width:999px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media(max-width:750px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media(max-width:350px) {
+    html {
+        font-size: 20%;
+    }
 }
