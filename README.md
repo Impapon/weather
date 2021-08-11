@@ -10,6 +10,6 @@
 
 
 ## For Login 
-username : mahadi/sifat/papon
+name : mahadi/sifat/papon
 password : 123
 
